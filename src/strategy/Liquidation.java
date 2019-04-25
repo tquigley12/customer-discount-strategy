@@ -5,23 +5,12 @@ package strategy;
  * @author tquigley1
  */
 public class Liquidation extends DiscountStrategy {
-    
-    private String customerName;
+
     private double billAmount;
-
-    public Liquidation(String customerName, double billAmount) {
-        this.customerName = customerName;
-        this.billAmount = billAmount;
-    }
-
-    @Override
-    public String getCustomerName() {
-        return customerName;
-    }
     
-    @Override
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public Liquidation(String customerName, double billAmount) {
+        super.setCustomerName(customerName);
+        this.setBillAmount(billAmount);
     }
     
     @Override
@@ -35,5 +24,5 @@ public class Liquidation extends DiscountStrategy {
     public void setBillAmount(double billAmount) {
         this.billAmount = billAmount;
     }
-
+    
 }

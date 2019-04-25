@@ -9,13 +9,7 @@ public abstract class DiscountStrategy extends Customer {
     public DiscountStrategy() {
         
     }
-    
-    @Override
-    public abstract String getCustomerName();
 
-    @Override
-    public abstract void setCustomerName(String customerName);
-    
     @Override
     public abstract double getBillAmount();
     

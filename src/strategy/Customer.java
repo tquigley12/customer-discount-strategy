@@ -2,26 +2,22 @@ package strategy;
 
 public abstract class Customer {
 
+    private String customerName;
+
     public Customer() {
-        
+
     }
 
-    public abstract String getCustomerName();
+    public String getCustomerName() {
+        return customerName;
+    }
 
-    public abstract void setCustomerName(String customerName);
-    
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
     public abstract double getBillAmount();
-  
+
     public abstract void setBillAmount(double billAmount);
 
-    /*
-    @Override
-    public String toString() {
-        return "Customer{"
-                + "customerName='" + customerName + '\''
-                + ", billAmount=" + billAmount
-                + ", discountType=" + discountType
-                + '}';
-    }
-    */
 }
