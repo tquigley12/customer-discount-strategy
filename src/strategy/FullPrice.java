@@ -16,7 +16,7 @@ public class FullPrice extends DiscountStrategy {
     @Override
     public double getBillAmount() {
         double tempBill;
-        tempBill = billAmount - (billAmount * 0.1);
+        tempBill = billAmount;
         return tempBill;
     }
     
