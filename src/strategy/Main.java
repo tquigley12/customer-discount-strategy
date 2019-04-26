@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<Customer> orders = new ArrayList<>();
-        //Discount types:  Sale, Discount, and Liquidation
+        //Discount types:  Sale, Discount, Liquidation and Full Price
         orders.add(new Discount("William Walters", 75.34));
         orders.add(new Sale("Susan Smothers", 24.12));
         orders.add(new Liquidation("Jessica Johnson", 273.93));
